@@ -16,3 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/clientmoral', function () {
+    return view('clientmoral');
+});
+
+Route::post('/clientmoraladd','ClientMoralController@persist');
+
+
+//Route::get('/', function () {
+    return view('welcome');
+//});
